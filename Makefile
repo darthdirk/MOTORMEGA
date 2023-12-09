@@ -2,7 +2,7 @@
 
 CC=avr-gcc
 CFLAGS= -Os -DF_CPU=16000000UL -mmcu=atmega2560
-BINS=main main
+BINS=main 
 # Compiling
 all: $(BINS)
 
