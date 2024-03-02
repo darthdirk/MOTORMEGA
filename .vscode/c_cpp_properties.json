@@ -3,10 +3,12 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/home/dirk/avr8-gnu-toolchain-linux_x86_64/avr/include/avr",
+                "/home/dirk/avr8-gnu-toolchain-linux_x86_64/avr/include"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/gcc",
+            "compilerPath": "/usr/bin/gcc-11",
             "cStandard": "c17",
             "cppStandard": "gnu++17",
             "intelliSenseMode": "linux-gcc-x64"

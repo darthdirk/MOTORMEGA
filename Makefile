@@ -1,7 +1,7 @@
 # Makefile for ATMEGA2560
 
 CC=avr-gcc
-CFLAGS= -Os -DF_CPU=16000000UL -mmcu=atmega2560
+CFLAGS= -Os -DF_CPU=16000000UL -mmcu=atmega2560 -I/home/dirk/avr8-gnu-toolchain-linux_x86_64/avr/include/avr -I/home/dirk/avr8-gnu-toolchain-linux_x86_64/avr/include -I./inc ./src/*.c 
 BINS=main 
 # Compiling
 all: $(BINS)
