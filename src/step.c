@@ -26,7 +26,8 @@ int step_init(){
     // Set prescaler to 8 
     TCCR1B |= (1 << CS11);
     TCCR1B &= ~((1 << CS12) | (1 << CS10)); // Clear CS12 and CS10
-    // configure timer
+    
+    // configure timer, Adjust this value as needed for your PWM frequency/duty cycle
 	OCR1A= COUNTER_VALUE;
 
 	// I want an interruot
