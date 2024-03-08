@@ -17,7 +17,7 @@ USBPORT:=$(shell ls /dev/ttyACM*)
 
 
 install.%: %.hex
-	avrdude -F -V -c arduino -patmega2560 -cwiring "-P/dev/ttyACM0" -b115200 -D "-Uflash:w:/home/dirk/MOTORMEGA/main.hex:i"
+	avrdude -F -V -c arduino -patmega2560 -cwiring "-P/dev/ttyACM1" -b115200 -D "-Uflash:w:/home/dirk/MOTORMEGA/main.hex:i"
 
 
 # Clean the build files
